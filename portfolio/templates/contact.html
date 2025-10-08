@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Contact | My Portfolio{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">📬 Contact Me</h2>
+
+<form method="POST" action="/contact" class="row g-3">
+    <div class="col-md-6">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" required>
+    </div>
+    <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" required>
+    </div>
+    <div class="col-12">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" name="message" rows="5" required></textarea>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </div>
+</form>
+
+<p class="mt-4 text-muted">I’ll try to respond to all messages within 48 hours.</p>
+{% endblock %}

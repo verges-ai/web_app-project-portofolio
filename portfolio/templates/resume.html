@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}Resume – Stephane Atontsa{% endblock %}
+
+{% block content %}
+<section class="container">
+  <h1 class="page-title">Resume</h1>
+
+  <div class="section">
+    <h2>Profile</h2>
+    <p>
+      Results-driven Data Scientist with a strong foundation in building AI and machine learning models to solve real-world problems. Experienced in the full data science lifecycle — from data wrangling and feature engineering to training, evaluation, and deployment of predictive models. Passionate about transforming complex data into actionable insights using Python, SQL, and modern AI frameworks. Adept at working independently or collaboratively to drive data-informed decision-making.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Experience</h2>
+    <div>
+      <h3>Specialist Tax Reporting – HSBC Düsseldorf</h3>
+      <p><strong>Jan 2023 – Present</strong></p>
+      <ul>
+        <li>Managed financial data for tax compliance.</li>
+        <li>Automated and improved reporting workflows.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Business Data Operation – HSBC Düsseldorf</h3>
+      <p><strong>Apr 2021 – Jan 2023</strong></p>
+      <ul>
+        <li>Managed datasets and automated reports.</li>
+        <li>Delivered insights for multiple departments.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <p>
+      <strong>B.Sc. in Applied Informatics</strong><br>
+      University Duisburg-Essen, Germany<br>
+      Apr 2015 – Aug 2020
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Certifications & Courses</h2>
+    <ul>
+      <li>SAP – Controlled Processes & ABAP</li>
+      <li>Python & Java Programmer</li>
+      <li>Excel VBA Expert</li>
+      <li>Tax Reporting Specialist</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>Java, Python, SQL, Excel, Git</li>
+      <li>Data Analysis, Automation, Web Dev</li>
+      <li>Database & Workflow Design</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Languages</h2>
+    <ul>
+      <li>French – Native</li>
+      <li>German – C1 Certified</li>
+      <li>English – B2 Certified</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <a class="btn" href="{{ url_for('download_resume') }}">📄 Download Full PDF Resume</a>
+  </div>
+</section>
+{% endblock %}

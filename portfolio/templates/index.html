@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Home | My Portfolio{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <img src="{{ url_for('static', filename='images/profile.jpg') }}" class="rounded-circle" width="150" alt="Profile Picture">
+    <h1 class="mt-3">Stephane Atontsa</h1>
+    <h5 class="text-muted">Python/Java/Excel vba/ABAP Developer | Data Enthusiast |AI Enthusiast| Open Source Contributor</h5>
+    
+    <p class="mt-4">
+        Welcome to my portfolio. I'm a Versatile and solution-oriented Developer with experience in Python, Java, Excel VBA, and ABAP. A passionate problem solver with a strong interest in data, AI, and open-source technologies. Skilled in designing and implementing efficient, scalable solutions that address real-world challenges. Known for translating complex requirements into clear, actionable code and leveraging data to drive impactful outcomes.
+Take a look at my work and feel free to get in touch!
+    </p>
+
+    <div class="mt-4">
+        <a class="btn btn-outline-primary mx-1" href="https://github.com/verges-ai" target="_blank">GitHub</a>
+        <a class="btn btn-outline-info mx-1" href="https://www.linkedin.com/in/stephane-atontsa-59a32a1b8/" target="_blank">LinkedIn</a>
+        <a class="btn btn-outline-secondary mx-1" href="/resume">View Resume</a>
+    </div>
+</div>
+{% endblock %}
